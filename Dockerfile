@@ -5,7 +5,7 @@ RUN \
       apt-get -y install --fix-missing \
             build-essential \
             wget \
-            openssl \
+            ca-certificates \
       && \
       apt-get clean
 
