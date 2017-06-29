@@ -12,12 +12,11 @@ jobs:
 
 
 resources:
-- name: source-code
+- name: cfops-resource
   type: git
   source:
-    uri: git@github.com:hijglander/cfops-resource.git
+    uri: https://github.com/hijglander/cfops-resource.git
     branch: master
-    private_key: {{github-private-key}}
 - name: docker-hub
   type: docker-image
   source:
